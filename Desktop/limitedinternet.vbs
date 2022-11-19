@@ -1,4 +1,4 @@
-X=MsgBox("THIS WILL UPDATE First if there is internet. Do you Want to Continue?",0+1,"INFO")
+X=MsgBox("THIS WILL UPDATE First if there is unlimeted internet. Do you Want to Continue?",0+1,"INFO")
 Dim objShell
 Set objShell = WScript.CreateObject ("WScript.shell")
 Set objShell = Nothing

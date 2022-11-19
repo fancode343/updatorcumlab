@@ -18,3 +18,4 @@ tar -xf LMNET.zip
 echo moving files
 copy file1 C:\Users\%USERNAME%\Desktop
 del LMNET.zip
+del quickupdator.cmd

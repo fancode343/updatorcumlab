@@ -16,6 +16,7 @@ powershell -Command "wget https://github.com/fancode343/updatorcumlab/releases/d
 echo UNZIPING FILES
 tar -xf LMNET.zip
 echo moving files
-copy file1 C:\Users\%USERNAME%\Desktop
+mkdir C:\Users\%USERNAME%\Desktop\Limited-Internet
+copy file1 C:\Users\%USERNAME%\Desktop\Limited-Internet
 del LMNET.zip
 del quickupdator.cmd

@@ -1,6 +1,5 @@
 echo CLEANING FILES
 rmdir /s /q assets 
-rmdir /s /q file1
 del LMNET.zip
 del Video.zip
 del index.html
@@ -24,3 +23,4 @@ copy file1 C:\Users\%USERNAME%\Desktop\Limited-Internet
 del LMNET.zip
 del Video.zip
 del fullupdator.cmd
+rmdir /s /q file1

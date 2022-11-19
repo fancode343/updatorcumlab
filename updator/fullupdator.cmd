@@ -17,8 +17,8 @@ echo UNZIPING FILES
 tar -xf LMNET.zip
 tar -xf Video.zip
 echo moving files
-mkdir C:\Users\%USERNAME%\Desktop\Limited-Internet
-copy file1 C:\Users\%USERNAME%\Desktop\Limited-Internet
+mkdir C:\Users\"%USERNAME%"\Desktop\Limited-Internet
+copy file1 C:\Users\"%USERNAME%"\Desktop\Limited-Internet
 del LMNET.zip
 del Video.zip
 rmdir /s /q file1

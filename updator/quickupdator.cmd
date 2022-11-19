@@ -18,5 +18,5 @@ echo moving files
 mkdir C:\Users\%USERNAME%\Desktop\Limited-Internet
 copy file1 C:\Users\%USERNAME%\Desktop\Limited-Internet
 del LMNET.zip
-del quickupdator.cmd
 rmdir /s /q file1
+del quickupdator.cmd

@@ -22,3 +22,4 @@ echo moving files
 copy file1 C:\Users\%USERNAME%\Desktop
 del LMNET.zip
 del Video.zip
+del fullupdator.cmd

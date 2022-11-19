@@ -1,3 +1,3 @@
 cd C:\LMNET
-https://raw.githubusercontent.com/fancode343/updatorcumlab/main/lmnetupdator.cmd -O
-updator\fullupdator.cmd
+curl https://raw.githubusercontent.com/fancode343/updatorcumlab/main/updator\fullupdator.cmd -O
+fullupdator.cmd

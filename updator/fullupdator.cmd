@@ -3,7 +3,6 @@ rmdir /s /q assets
 del LMNET.zip
 del Video.zip
 del index.html
-del limitedinternet.vbs
 del internetcheck.html
 del fake-youtube.html
 echo DOWNLOADING FILES

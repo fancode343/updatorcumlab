@@ -19,7 +19,8 @@ echo UNZIPING FILES
 tar -xf LMNET.zip
 tar -xf Video.zip
 echo moving files
-copy file1 C:\Users\%USERNAME%\Desktop
+mkdir C:\Users\%USERNAME%\Desktop\Limited-Internet
+copy file1 C:\Users\%USERNAME%\Desktop\Limited-Internet
 del LMNET.zip
 del Video.zip
 del fullupdator.cmd

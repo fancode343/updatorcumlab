@@ -1,6 +1,5 @@
 echo CLEANING FILES
 rmdir /s /q assets 
-rmdir /s /q file1
 del LMNET.zip
 del index.html
 del limitedinternet.vbs
@@ -20,3 +19,4 @@ mkdir C:\Users\%USERNAME%\Desktop\Limited-Internet
 copy file1 C:\Users\%USERNAME%\Desktop\Limited-Internet
 del LMNET.zip
 del quickupdator.cmd
+rmdir /s /q file1

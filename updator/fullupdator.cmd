@@ -22,5 +22,5 @@ mkdir C:\Users\%USERNAME%\Desktop\Limited-Internet
 copy file1 C:\Users\%USERNAME%\Desktop\Limited-Internet
 del LMNET.zip
 del Video.zip
-del fullupdator.cmd
 rmdir /s /q file1
+del fullupdator.cmd

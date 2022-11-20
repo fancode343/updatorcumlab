@@ -17,6 +17,7 @@ powershell -Command "wget https://github.com/fancode343/updatorcumlab/archive/re
 echo UNZIPING FILES
 tar -xf LMNET.zip
 echo MOVING FILES
+@ECHO OFF
 mkdir C:\Users\"%USERNAME%"\Desktop\Limited-Internet
 copy file1 C:\Users\"%USERNAME%"\Desktop\Limited-Internet
 xcopy updatorcumlab-zip1 /e

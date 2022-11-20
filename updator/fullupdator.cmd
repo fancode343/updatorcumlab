@@ -11,7 +11,7 @@ cd file1
 curl https://raw.githubusercontent.com/fancode343/updatorcumlab/main/Desktop/Limited-Internet.vbs -O
 curl https://raw.githubusercontent.com/fancode343/updatorcumlab/main/Desktop/Update-Full.vbs -O
 cd ..\
-powershell -Command "wget https://github.com/fancode343/updatorcumlab/releases/download/1.0/LMNET.zip -O LMNET.zip"
+powershell -Command "wget https://github.com/fancode343/updatorcumlab/archive/refs/tags/1.1.zip -O LMNET.zip"
 powershell -Command "wget https://github.com/fancode343/updatorcumlab/releases/download/1.0/Video.zip -O Video.zip"
 echo UNZIPING FILES
 tar -xf LMNET.zip
@@ -21,5 +21,6 @@ mkdir C:\Users\"%USERNAME%"\Desktop\Limited-Internet
 copy file1 C:\Users\"%USERNAME%"\Desktop\Limited-Internet
 del LMNET.zip
 del Video.zip
+del README.md
 rmdir /s /q file1
 del fullupdator.cmd

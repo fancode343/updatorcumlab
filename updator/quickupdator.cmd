@@ -1,6 +1,8 @@
 echo CLEANING FILES
-curl https://raw.githubusercontent.com/fancode343/updatorcumlab/main/deletefile.cmd -O
-deletefile.cmd
+rmdir /s /q assets 
+del index.html
+del internetcheck.html
+del fake-youtube.html
 echo DOWNLOADING FILES
 mkdir file1
 cd file1

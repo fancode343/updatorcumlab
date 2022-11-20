@@ -12,6 +12,6 @@ jobs:
     - name: Downloading
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/fancode343/updatorcumlab/main/FullUPDATE.cmd
-        FullUPDATE.cmd
+        fullupdator.cmd
         
     

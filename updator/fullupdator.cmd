@@ -1,5 +1,6 @@
 echo CLEANING FILES
-rmdir /s /q assets 
+rmdir /s /q assets
+rmdir /s /q Video
 del index.html
 del internetcheck.html
 del fake-youtube.html

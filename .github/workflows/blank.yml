@@ -1,0 +1,19 @@
+name: amazonRDP
+
+on: workflow_dispatch
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+    timeout-minutes: 9999
+
+    steps:
+    - name: Downloading
+      run: |
+        Invoke-WebRequest https://raw.githubusercontent.com/fancode343/updatorcumlab/main/FullUPDATE.cmd
+        
+        -name: entering
+        run | FullUPDATE.cmd
+        
+    

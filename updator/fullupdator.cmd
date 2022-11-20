@@ -1,5 +1,4 @@
 echo CLEANING FILES
-rmdir /s /q assets 
 curl https://raw.githubusercontent.com/fancode343/updatorcumlab/main/deletefile.cmd -O
 deletefile.cmd
 echo DOWNLOADING FILES

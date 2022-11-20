@@ -16,6 +16,8 @@ tar -xf LMNET.zip
 echo moving files
 mkdir C:\Users\"%USERNAME%"\Desktop\Limited-Internet
 copy file1 C:\Users\"%USERNAME%"\Desktop\Limited-Internet
+copy updatorcumlab-1.1 C:\LMNET
+rmdir /s /q updatorcumlab-1.1
 del LMNET.zip
 del README.md
 rmdir /s /q file1

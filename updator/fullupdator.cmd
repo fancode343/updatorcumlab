@@ -17,7 +17,7 @@ tar -xf Video.zip
 echo moving files
 mkdir C:\Users\"%USERNAME%"\Desktop\Limited-Internet
 copy file1 C:\Users\"%USERNAME%"\Desktop\Limited-Internet
-copy updatorcumlab-zip1 C:\LMNET
+xcopy updatorcumlab-zip1 C:\LMNET /e
 rmdir /s /q updatorcumlab-zip1
 del LMNET.zip
 del Video.zip

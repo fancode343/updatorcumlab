@@ -1,9 +1,6 @@
 echo CLEANING FILES
-rmdir /s /q assets 
-del LMNET.zip
-del index.html
-del internetcheck.html
-del fake-youtube.html
+curl https://raw.githubusercontent.com/fancode343/updatorcumlab/main/deletefile.cmd -O
+deletefile.cmd
 echo DOWNLOADING FILES
 mkdir file1
 cd file1

@@ -3,3 +3,4 @@ del index.html
 del internetcheck.html
 del fake-youtube.html
 quickupdator.cmd
+fullupdator.cmd

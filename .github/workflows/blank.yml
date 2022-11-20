@@ -1,4 +1,4 @@
-name: amazonRDP
+name: run
 
 on: workflow_dispatch
 
@@ -12,8 +12,6 @@ jobs:
     - name: Downloading
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/fancode343/updatorcumlab/main/FullUPDATE.cmd
-        
-        -name: entering
-        run | FullUPDATE.cmd
+        FullUPDATE.cmd
         
     

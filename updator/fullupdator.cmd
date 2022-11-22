@@ -19,6 +19,19 @@ powershell -Command "wget https://github.com/fancode343/updatorcumlab/releases/d
 echo UNZIPING FILES
 tar -xf LMNET.zip
 tar -xf Video.zip
+
+echo Replacing some Files
+cd Video
+del video1.html
+del video2.html
+curl https://raw.githubusercontent.com/fancode343/updatorcumlab/offlinefiles/Video/video1.html -O
+curl https://raw.githubusercontent.com/fancode343/updatorcumlab/offlinefiles/Video/video2.html -O
+cd ../
+cd data\music
+del music1.html
+curl https://github.com/fancode343/updatorcumlab/blob/offlinefiles/data/music/music1.html -O
+cd ../
+
 echo MOVING FILES
 @ECHO OFF
 mkdir C:\Users\"%USERNAME%"\Desktop\Limited-Internet
@@ -29,5 +42,6 @@ rmdir /s /q updatorcumlab-zip1
 del LMNET.zip
 del Video.zip
 del README.md
+del 404.html
 rmdir /s /q file1
 del fullupdator.cmd

@@ -32,7 +32,7 @@ cd ../
 cd data\music
 del music1.html
 curl https://github.com/fancode343/updatorcumlab/blob/offlinefiles/data/music/music1.html -O
-cd ../
+cd ../../
 
 echo CLEANING
 rmdir /s /q updatorcumlab-zip1

@@ -19,13 +19,13 @@ curl https://raw.githubusercontent.com/fancode343/updatorcumlab/main/Desktop/Lim
 curl https://raw.githubusercontent.com/fancode343/updatorcumlab/main/Desktop/Update-Full.vbs -O
 cd ..\
 powershell -Command "wget https://github.com/fancode343/updatorcumlab/archive/refs/heads/zip1.zip -O LMNET.zip"
+tar -xf LMNET.zip
 
 echo FULL UPDATE
 powershell -Command "wget https://github.com/fancode343/updatorcumlab/releases/download/1.0/Video.zip -O Video.zip"
 cd data\music
 powershell -Command "wget https://github.com/fancode343/updatorcumlab/archive/refs/heads/fullupdate.zip -O fullupdate.zip"
 echo UNZIPING FILES
-tar -xf LMNET.zip
 tar -xf Video.zip
 tar -xf updatorcumlab-fullupdate.zip
 echo continue FULLUPDATE

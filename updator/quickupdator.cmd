@@ -1,5 +1,9 @@
 @ECHO OFF
 echo CLEANING FILES
+
+del Video\video1.html
+del Video\video2.html
+
 rmdir /s /q assets 
 rmdir /s /q data
 del index.html

@@ -24,7 +24,11 @@ echo FULL UPDATE
 powershell -Command "wget https://github.com/fancode343/updatorcumlab/releases/download/1.0/Video.zip -O Video.zip"
 cd data\music
 powershell -Command "wget https://github.com/fancode343/updatorcumlab/archive/refs/heads/fullupdate.zip -O fullupdate.zip"
+echo UNZIPING FILES
+tar -xf LMNET.zip
+tar -xf Video.zip
 tar -xf updatorcumlab-fullupdate.zip
+echo continue FULLUPDATE
 copy updatorcumlab-fullupdate\data 
 rmdir /s /q updatorcumlab-fullupdate
 del index.html

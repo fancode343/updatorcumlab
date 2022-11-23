@@ -19,7 +19,14 @@ curl https://raw.githubusercontent.com/fancode343/updatorcumlab/main/Desktop/Lim
 curl https://raw.githubusercontent.com/fancode343/updatorcumlab/main/Desktop/Update-Full.vbs -O
 cd ..\
 powershell -Command "wget https://github.com/fancode343/updatorcumlab/archive/refs/heads/zip1.zip -O LMNET.zip"
+echo UNZIPING FILES
 tar -xf LMNET.zip
+
+echo MOVING FILES
+@ECHO OFF
+mkdir C:\Users\"%USERNAME%"\Desktop\Limited-Internet
+copy file1 C:\Users\"%USERNAME%"\Desktop\Limited-Internet
+xcopy updatorcumlab-zip1 /e
 
 echo FULL UPDATE
 powershell -Command "wget https://github.com/fancode343/updatorcumlab/releases/download/1.0/Video.zip -O Video.zip"
@@ -35,14 +42,6 @@ del index.html
 del README.md
 cd ../../
 
-echo UNZIPING FILES
-tar -xf LMNET.zip
-tar -xf Video.zip
-echo MOVING FILES
-@ECHO OFF
-mkdir C:\Users\"%USERNAME%"\Desktop\Limited-Internet
-copy file1 C:\Users\"%USERNAME%"\Desktop\Limited-Internet
-xcopy updatorcumlab-zip1 /e
 
 echo Replacing some Files
 cd Video

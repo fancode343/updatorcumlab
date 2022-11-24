@@ -31,7 +31,7 @@ tar -xf Video.zip
 cd data\music
 powershell -Command "wget https://github.com/fancode343/updatorcumlab/archive/refs/heads/fullupdate.zip -O fullupdate.zip"
 echo UNZIPING FILES
-tar -xf updatorcumlab-fullupdate.zip
+tar -xf fullupdate.zip
 echo continue FULLUPDATE
 copy updatorcumlab-fullupdate\data\music
 rmdir /s /q updatorcumlab-fullupdate

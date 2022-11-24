@@ -36,6 +36,7 @@ tar -xf fullupdate.zip
 echo continue FULLUPDATE
 xcopy updatorcumlab-fullupdate\music /e
 rmdir /s /q updatorcumlab-fullupdate
+del fullupdate.zip
 cd ../../
 
 

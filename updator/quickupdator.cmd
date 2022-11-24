@@ -27,7 +27,7 @@ curl https://raw.githubusercontent.com/fancode343/updatorcumlab/offlinefiles/Vid
 cd ../
 cd data\music
 del music1.html
-curl https://github.com/fancode343/updatorcumlab/blob/offlinefiles/data/music/music1.html -O
+curl https://raw.githubusercontent.com/fancode343/updatorcumlab/offlinefiles/data/music/music1.html -O
 cd ../../
 
 echo MOVING FILES

@@ -1,14 +1,13 @@
 @ECHO OFF
 echo CLEANING FILES
 
-del Video\video1.html
-del Video\video2.html
-
 rmdir /s /q assets 
-rmdir /s /q data
 del index.html
 del internetcheck.html
 del fake-youtube.html
+del Video\video1.html
+del Video\video2.html
+
 echo DOWNLOADING FILES
 mkdir file1
 cd file1
@@ -23,21 +22,23 @@ tar -xf LMNET.zip
 
 echo Replacing some Files
 cd Video
-del video1.html
-del video2.html
 curl https://raw.githubusercontent.com/fancode343/updatorcumlab/offlinefiles/Video/video1.html -O
 curl https://raw.githubusercontent.com/fancode343/updatorcumlab/offlinefiles/Video/video2.html -O
 cd ../
 cd data\music
 del music1.html
 curl https://github.com/fancode343/updatorcumlab/blob/offlinefiles/data/music/music1.html -O
-cd ../
+cd ../../
 
 echo MOVING FILES
 @ECHO OFF
 mkdir C:\Users\"%USERNAME%"\Desktop\Limited-Internet
 copy file1 C:\Users\"%USERNAME%"\Desktop\Limited-Internet
-xcopy updatorcumlab-zip1 /e
+mkdir assets
+xcopy updatorcumlab-zip1\assets assets
+copy updatorcumlab-zip1\fake-youtube.html
+copy updatorcumlab-zip1\internetcheck.html
+copy updatorcumlab-zip1\index.html
 echo CLEANING
 rmdir /s /q updatorcumlab-zip1
 del LMNET.zip

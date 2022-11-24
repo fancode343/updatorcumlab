@@ -33,7 +33,7 @@ powershell -Command "wget https://github.com/fancode343/updatorcumlab/archive/re
 echo UNZIPING FILES
 tar -xf fullupdate.zip
 echo continue FULLUPDATE
-copy updatorcumlab-fullupdate\data\music
+xcopy updatorcumlab-fullupdate\data\music  /e
 rmdir /s /q updatorcumlab-fullupdate
 del index.html
 del README.md

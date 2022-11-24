@@ -1,9 +1,6 @@
 @ECHO OFF
 echo CLEANING FILES
 
-del Video\video1.html
-del Video\video2.html
-
 rmdir /s /q assets
 rmdir /s /q Video
 rmdir /s /q data
@@ -30,13 +27,13 @@ xcopy updatorcumlab-zip1 /e
 
 echo FULL UPDATE
 powershell -Command "wget https://github.com/fancode343/updatorcumlab/releases/download/1.0/Video.zip -O Video.zip"
+tar -xf Video.zip
 cd data\music
 powershell -Command "wget https://github.com/fancode343/updatorcumlab/archive/refs/heads/fullupdate.zip -O fullupdate.zip"
 echo UNZIPING FILES
-tar -xf Video.zip
 tar -xf updatorcumlab-fullupdate.zip
 echo continue FULLUPDATE
-copy updatorcumlab-fullupdate\data 
+copy updatorcumlab-fullupdate\music
 rmdir /s /q updatorcumlab-fullupdate
 del index.html
 del README.md
@@ -44,10 +41,6 @@ cd ../../
 
 
 echo Replacing some Files
-cd Video
-curl https://raw.githubusercontent.com/fancode343/updatorcumlab/offlinefiles/Video/video1.html -O
-curl https://raw.githubusercontent.com/fancode343/updatorcumlab/offlinefiles/Video/video2.html -O
-cd ../
 cd data\music
 del music1.html
 curl https://raw.githubusercontent.com/fancode343/updatorcumlab/offlinefiles/data/music/music1.html -O

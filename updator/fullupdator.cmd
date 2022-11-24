@@ -31,12 +31,11 @@ tar -xf Video.zip
 cd data\music
 powershell -Command "wget https://github.com/fancode343/updatorcumlab/archive/refs/heads/fullupdate.zip -O fullupdate.zip"
 echo UNZIPING FILES
+del music1.html
 tar -xf fullupdate.zip
 echo continue FULLUPDATE
-xcopy updatorcumlab-fullupdate\data\music  /e
+xcopy updatorcumlab-fullupdate\music /e
 rmdir /s /q updatorcumlab-fullupdate
-del index.html
-del README.md
 cd ../../
 
 
